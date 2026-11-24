@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ameliyat Sabahı</title>
+<meta name="description" content="Psikotrop ilaç kullanan hastada ameliyat öncesi yönetim: karar oyunu, anestezi tepsisi etkileşimleri, hızlı tur ve konsültasyon notu üretici. Hekimler içindir.">
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+<header class="ust">
+  <p class="etiket">Hekimler ve asistanlar için</p>
+  <h1>Ameliyat Sabahı</h1>
+  <p class="giris">Psikotrop ilaç kullanan hasta ameliyata giriyor. Hangi ilaç sürer, hangisi o sabah verilmez, anestezi tepsisindeki hangi ilaç neyle çakışır?</p>
+  <p class="uyari"><strong>Bu sayfa bir eğitim aracıdır, hekimler içindir.</strong> Öneriler bir uzman uzlaşısına dayanır, bağlayıcı kılavuz değildir ve erişkin literatüründen gelir. Hasta ve yakınları ilaç kararını bu sayfaya göre vermemeli, hekimine danışmalıdır. Sayfaya gerçek hasta bilgisi girilmez.</p>
+  <nav class="sekme" aria-label="Bölümler">
+    <button type="button" data-sekme="oyun" aria-pressed="true">Ameliyat sabahı</button>
+    <button type="button" data-sekme="hizli" aria-pressed="false">Sürdür mü, kes mi?</button>
+    <button type="button" data-sekme="not" aria-pressed="false">Not üretici</button>
+  </nav>
+</header>
+
+<main class="govde" id="govde" aria-live="polite"></main>
+
+<section class="dip">
+  <details>
+    <summary>Kullanım notları</summary>
+    <ul id="notlar"></ul>
+  </details>
+  <h2>Kaynak</h2>
+  <p id="kaynak"></p>
+  <p class="kunye">Türkçe konsültasyon şablonları, oyun ve sayfa: Doç. Dr. Miraç Barış Usta (2026). Sayfadaki öneri cümleleri şablon belgesinden değiştirilmeden alınmıştır. Anestezi tepsisindeki eşleşmeler ve risk etiketleri bu cümlelerin içindeki sözcüklerden otomatik türetilir. Vakalar kurgusaldır. Hiçbir veri kaydedilmez ya da gönderilmez.</p>
+</section>
+<noscript><p class="uyari">Sayfanın çalışması için JavaScript gerekir.</p></noscript>
+<script src="veri.js?v=1"></script>
+<script src="app.js?v=1"></script>
+</body>
+</html>
